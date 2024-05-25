@@ -27,6 +27,14 @@ namespace AccionesDeVehiculo
 
         }
 
+        //Modificamos el nuevo metodo Lavar de la clase base.
+        public new void Lavar()
+        {
+
+            Console.WriteLine("Lavando el coche con cera y shampoo especial.");
+
+        }
+
 
     }
 }

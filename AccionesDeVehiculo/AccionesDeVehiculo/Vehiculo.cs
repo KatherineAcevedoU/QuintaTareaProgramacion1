@@ -27,5 +27,14 @@ namespace AccionesDeVehiculo
         }
 
 
+        //Nuevo metodo llamado Lavar
+        public void Lavar()
+        {
+
+            Console.WriteLine("Lavando el vehiculo.");
+
+        }
+
+
     }
 }

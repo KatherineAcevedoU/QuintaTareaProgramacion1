@@ -35,6 +35,22 @@ namespace AccionesDeVehiculo
             Console.WriteLine("Costo del mantenimiento de la moto: " + miMoto.ObtenerCostoMantenimiento());
             Console.WriteLine();
 
+
+            //Mando a llamar al metodo lavar.
+
+            //Este metodo esta oculto en la clase Coche, por lo tanto mostrara el metodo de la clase base.
+            miCoche.Lavar();
+            Console.WriteLine();
+
+
+            //Creamos una intancia solamente de la clase Coche, para tener acceso al metodo oculto.
+            Coche miCocheReal = new Coche();
+
+            miCocheReal.Lavar();
+            Console.WriteLine();
+
+
+
         }
     }
 }
