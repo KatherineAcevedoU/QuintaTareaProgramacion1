@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AccionesDeVehiculo
 {
-    public class CambioAceite : Servicio
+    public class LubricacionCadena : Servicio
     {
 
         //Implementacion de los metodos de la clase abstracta.
@@ -16,21 +16,21 @@ namespace AccionesDeVehiculo
         public override void RealizarServicio()
         {
 
-            Console.WriteLine("Realizando cambio de aceite.");
+            Console.WriteLine("Realizando lubricacion de cadena.");
 
         }
 
         public override double CalcularCosto()
         {
 
-            return 50.0;  //Este es el costo del cambio de aceite.
+            return 50.0;  //Este es el costo de lubricacion de cadena.
 
         }
 
         public override int TiempoDeServicio()
         {
 
-            return 1; //Este es el tiempo en el que se realiza un cambio de aceite.
+            return 2; //Este es el tiempo en el que se realiza una lubricacion de cadena.
 
         }
 

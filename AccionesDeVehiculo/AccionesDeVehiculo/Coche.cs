@@ -35,6 +35,21 @@ namespace AccionesDeVehiculo
 
         }
 
+        public override int TiempoLavar()
+        {
+
+            return 2; //Este es el tiempo en el que se dilata lavar un coche.
+
+        }
+
+        public override double ObtenerCostoLavado()
+        {
+
+            return 200.0; //Este es el costo del lavado de un coche.
+
+        }
+
 
     }
+
 }

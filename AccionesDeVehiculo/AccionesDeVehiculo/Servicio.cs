@@ -14,5 +14,8 @@ namespace AccionesDeVehiculo
 
         public abstract double CalcularCosto();
 
+        public abstract int TiempoDeServicio();
+
     }
+
 }

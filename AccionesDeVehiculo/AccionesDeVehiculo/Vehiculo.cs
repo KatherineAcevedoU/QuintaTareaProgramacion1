@@ -35,6 +35,21 @@ namespace AccionesDeVehiculo
 
         }
 
+        //Nuevo metodo para el tiempo de lavado
+        public virtual int TiempoLavar()
+        {
+
+            return 3;  //Este es el tiempo en el que se dilata lavar un transporte general.
+
+        }
+
+        public virtual double ObtenerCostoLavado()
+        {
+
+            return 450.0; //Este es el costo del lavado general.
+
+        }
 
     }
+
 }
