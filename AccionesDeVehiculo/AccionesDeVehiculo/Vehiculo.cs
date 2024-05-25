@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AccionesDeVehiculo
 {
-    internal class Vehiculo
+    public class Vehiculo
     {
 
         //Creamos metodos virtuales en la clase base.

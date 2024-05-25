@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AccionesDeVehiculo
 {
-    internal class Moto : Vehiculo
+    public class Moto : Vehiculo
     {
 
         //Implementamos los metodos de la clase base.

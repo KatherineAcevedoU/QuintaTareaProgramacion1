@@ -17,7 +17,6 @@ namespace AccionesDeVehiculo
             Console.WriteLine();
 
             //Creo una instancia de la clase Coche, en donde la variable miCoche almacena los metodos de la clase Coche.
-
             Vehiculo miCoche = new Coche();
 
             miCoche.RealizarMantenimiento();
@@ -27,12 +26,14 @@ namespace AccionesDeVehiculo
 
 
             //Creo una instancia de la clase Moto, en donde la variable miMoto almacena los metodos de la clase Moto.
-
             Vehiculo miMoto = new Moto();
 
             miMoto.RealizarMantenimiento();
 
             Console.WriteLine("Costo del mantenimiento de la moto: " + miMoto.ObtenerCostoMantenimiento());
+            Console.WriteLine();
+
+            Console.WriteLine("---------------------------------------------");
             Console.WriteLine();
 
 
@@ -48,6 +49,29 @@ namespace AccionesDeVehiculo
 
             miCocheReal.Lavar();
             Console.WriteLine();
+
+            Console.WriteLine("---------------------------------------------");
+            Console.WriteLine();
+
+
+            //Creo una instancia de la clase CambioAceite, en donde la variable servicioAceite almacena los metodos de la clase CambioAceite.
+            Servicio servicioAceite = new CambioAceite();
+
+            servicioAceite.RealizarServicio();
+
+            Console.WriteLine("Costo del cambio de aceite $: " + servicioAceite.CalcularCosto());
+            Console.WriteLine();
+
+            //Creo una instancia de la clase ReparacionFrenos, en donde la variable servicioFrenos almacena los metodos de la clase ReparacionFrenos.
+            Servicio servicioFrenos = new ReparacionFrenos();
+
+            servicioFrenos.RealizarServicio();
+
+            Console.WriteLine("Costo de la reparacion de frenos $: " + servicioFrenos.CalcularCosto());
+            Console.WriteLine();
+
+            //No podemos instanciar la clase Servicio ya que es una clase abstracta.
+            //Servicio mensajero = new Servicio();
 
 
 
